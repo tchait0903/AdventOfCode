@@ -42,7 +42,6 @@ try:
         for line in lines[2:]:
             tokens = line.split(' ')
             locations[tokens[0]] = [tokens[2].replace('(','').replace(',',''), tokens[3].replace(')','')]
-        
 
         startingLocations = [key for key in locations if key.endswith("A")]
         stepDictionary = {}
